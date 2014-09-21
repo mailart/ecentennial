@@ -1,0 +1,50 @@
+<resources>
+    <string name="usenameerror">Please input valid username</string>
+	<string name="passworderror">Please input valid password</string>
+	<string name="login">0:Logging...it might take few minutes</string>
+	<string name="loginfinish">0:Logging successful...Processing data...</string>
+	<string name="wifierror">Wifi disconnection, You should connect it or allow 3G data</string>
+    <string name="app_name">mCentennial</string>
+    <string name="syncerror">Wifi is not available you may need to connect it or allow 3G data in setup </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">mCentennial</string>
+    <string name="title_webprint">Centennial Webprint</string>
+	<string name="configtitle1">Update</string>
+	<string name="configtitle2">Network</string>
+	<string name="configtitle3">Account</string>
+	<string name="configtitle4">About</string>
+	<string name="restore">Restore</string>
+	<string name="restorestrfinish">Restore finished</string>
+	<string name="backup">Backup</string>
+	<string name="backupstrfinish">Backup finished</string>
+	<string name="view">View</string>
+	<string name="hidehistory">Hide hostorical record</string>
+	<string name="author">Contact Author</string>
+	<string name="restorestr">Do you want to restore backup to current Account?</string>
+	<string name="backupstr">Do you want to backup current Account data? The lastest backup will be covered.</string>
+	<string name="resetstr">Do you want to delete currently Account, all data will be erased </string>
+	<string name="installtips">You have not install Mobile Printer for Centennial, it allows you print documents on your phone directly. Do you want to install it now? </string>
+	<string name="updateconfirm">New version has been detected; do you want to update it now.</string>
+    
+	
+	<string name="doc2pdf1">0:Converting Format</string>
+	<string name="doc2pdf2">1:Connecting to server</string>
+	<string name="doc2pdf3">1:Converting Complete</string>
+	<string name="doc2pdf4">1:Converting Error</string>
+	
+	<string name="print1">0:Logging to Webprinter...</string>
+	<string name="print2">1:Network error, Checking your connection then try again</string>
+	<string name="print3">1:Format error Update please</string>
+	<string name="print4">1:Converting Error</string>
+	<string name="print5">1:Logging to Webprinter...</string>
+	<string name="print11">1:Invalid username or password webprinter needs the account of desktop system in College</string>
+	
+	
+	
+	<string name="print6">1:Format error, Update software please</string>
+	<string name="print7">1:Can not find print on webprinter list, please select another one and try again</string>
+	<string name="print8">1:Uploading Data...</string>
+	<string name="print9">1:Checking Status...</string>
+	<string name="print10">1:Can not find Status Check URL, Update software please</string>
+</resources>

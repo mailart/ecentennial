@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+   
+        
+    <TabHost android:id="@+id/tabhost"   
+      android:layout_width="fill_parent"   
+       android:layout_height="match_parent"   
+      xmlns:android="http://schemas.android.com/apk/res/android">  
+      <LinearLayout android:layout_width="fill_parent"   
+          android:id="@+id/linearLayout1"   
+          android:layout_height="fill_parent"
+          android:background="#ffffff"
+          android:orientation="vertical">  
+            
+          <HorizontalScrollView android:layout_height="wrap_content"  
+                android:layout_width="fill_parent" android:scrollbars="none">   
+            <TabWidget  android:layout_width="fill_parent"   
+              android:layout_height="40dp"   
+              android:id="@android:id/tabs"></TabWidget> 
+            </HorizontalScrollView> 
+     
+      <RelativeLayout
+        android:id="@+id/optionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp" 
+        android:background="#d2d2d2"
+        android:layout_marginTop="0dp" >
+
+      <TextView android:id="@+id/course"    
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"  
+            android:textColor="#ffffff"  
+            android:layout_marginLeft="5dp"
+            android:text="All courses"
+            android:textAppearance="?android:attr/textAppearanceMedium" /> 
+          
+	      <ProgressBar
+	        android:id="@+id/checkstatus"
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="7dp"
+	        android:layout_marginLeft="0dp"/>
+	      
+	       <ImageView
+	        android:id="@+id/Sync"
+	        android:layout_width="26dp"
+	        android:layout_height="26dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="0dp"
+	        android:src="@android:drawable/stat_notify_sync" />
+	       
+	       <ImageView
+	        android:id="@+id/google"
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="37dp"
+	        android:layout_marginLeft="0dp"
+	        android:src="@drawable/google" />  
+	        
+	       <ImageView
+	        android:id="@+id/twitter"
+	        android:layout_width="22dp"
+	        android:layout_height="22dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="63dp"
+	        android:layout_marginLeft="0dp"
+	        android:src="@drawable/twitter" />  
+	        
+	       <ImageView
+	        android:id="@+id/Fav"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="91dp"
+	        android:layout_marginLeft="0dp"
+	        android:src="@drawable/facebook" />  
+      
+      </RelativeLayout>
+      
+            
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@android:id/tabcontent">  
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/Newstab">
+                
+                    <ListView
+			          android:id="@+id/News"
+			          android:layout_width="match_parent"
+			          android:layout_height="match_parent"
+			          android:fastScrollEnabled="true" 
+			          android:layout_weight="1" ></ListView>
+                
+                </LinearLayout>  
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/Contentab">
+                              <ListView
+			          android:id="@+id/Content"
+			          android:layout_width="match_parent"
+			          android:layout_height="match_parent"
+			          android:fastScrollEnabled="true" 
+			          android:layout_weight="1" ></ListView>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/Gradetab">
+                    
+                     <ListView
+			          android:id="@+id/Grade"
+			          android:layout_width="match_parent"
+			          android:layout_height="match_parent"
+			          android:fastScrollEnabled="true" 
+			          android:layout_weight="1" ></ListView>
+                     
+                </LinearLayout>  
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/Gradetab">
+                    
+                     <ListView
+			          android:id="@+id/Download"
+			          android:layout_width="match_parent"
+			          android:layout_height="match_parent"
+			          android:fastScrollEnabled="true" 
+			          android:layout_weight="1" ></ListView>
+                     
+                </LinearLayout>  
+            </FrameLayout>  
+            
+            
+           
+           
+        
+        </LinearLayout>  
+         
+      
+    </TabHost>
+    
+     <LinearLayout 
+           android:id="@+id/lad1"
+         android:layout_below="@+id/tabhost"
+           android:layout_width="fill_parent"
+    		android:layout_height="150dp"
+    		android:background="#0000ff"
+		    android:layout_alignParentLeft="true"
+           >
+         <com.google.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+		    android:id="@+id/adView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    ads:adSize="SMART_BANNER"
+		    ads:adUnitId="a1511b532f4e60a"
+		/>
+        </LinearLayout>
+        
+</RelativeLayout> 

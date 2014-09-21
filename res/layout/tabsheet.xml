@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>  
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+        android:layout_width="fill_parent"  
+        android:layout_height="80dp"  
+        android:paddingLeft="5dip"  
+        android:paddingRight="5dip"  
+        android:background="@drawable/tabsel"
+        
+        >    
+          
+        <TextView android:id="@+id/tab_label"    
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerInParent="true"  
+            android:gravity="center"  
+            android:textColor="#ffffff"  
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+        <RelativeLayout
+        android:id="@+id/numlayout"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+	    android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+        
+        <ImageView
+	        android:id="@+id/numbk"
+	        android:scaleType="fitXY"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/numbk" />
+        
+        <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+		android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </RelativeLayout>  
+</RelativeLayout> 

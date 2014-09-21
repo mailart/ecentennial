@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/link" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="15dp"
+        android:text="1" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="3" />
+
+    
+    
+    <ImageView
+	        android:id="@+id/google"
+	        android:layout_width="26dp"
+	        android:layout_height="26dp"
+	        android:layout_alignTop="@+id/button1"
+	        android:layout_toLeftOf="@+id/button1"
+	        android:layout_marginRight="7dp"
+	        android:layout_marginTop="4dp"
+	        android:src="@drawable/google" />  
+	        
+	       <ImageView
+	        android:id="@+id/twitter"
+	        android:layout_width="26dp"
+	        android:layout_height="26dp"
+	         android:layout_alignTop="@+id/google"
+	        android:layout_toLeftOf="@+id/google"
+	        android:layout_marginRight="7dp"
+	        android:src="@drawable/twitter" />  
+	        
+	       <ImageView
+	        android:id="@+id/Fav"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        android:layout_alignTop="@+id/twitter"
+	        android:layout_toLeftOf="@+id/twitter"
+	        android:layout_marginRight="7dp"
+	        android:src="@drawable/facebook" />  
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginRight="9dp"
+        android:text="OK" />
+
+</RelativeLayout>

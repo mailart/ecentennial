@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" >  
+  
+    <ViewFlipper  
+        android:id="@+id/viewflipper"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"    
+        android:flipInterval="2000" >  
+  
+        <include layout="@layout/guide1" />  
+  
+        <include layout="@layout/guide2" />  
+  
+        <include layout="@layout/guide3" />  
+  		<include layout="@layout/guide4" /> 
+		<include layout="@layout/guide5" /> 
+    </ViewFlipper>  
+
+	<my.netstudio.mycentennial.PageControlView   
+             android:id="@+id/what_news_page_control"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17.5dip"
+            android:background="@null"
+            android:gravity="bottom|center" />
+   
+    
+</RelativeLayout>  

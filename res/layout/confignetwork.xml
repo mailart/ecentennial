@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="20dip"
+        android:layout_centerVertical="true"
+		android:textColor="#000000"
+        android:text="Use mobile data" />
+    	
+	  <CheckBox   android:id="@+id/CheckBox01" 
+	 android:layout_alignParentRight="true"
+	 android:layout_centerVertical="true"
+	  android:layout_width="wrap_content" 
+	  android:layout_marginRight="13dp"
+	  android:focusable="false"
+	  android:focusableInTouchMode="false" 
+		android:clickable="false" 
+	android:layout_height="wrap_content"></CheckBox>
+	 
+        
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+	<color name="selected">#ff994e</color>
+	<drawable name="darkgray">#808080FF</drawable>
+	<drawable name="selected1">#ff994e</drawable>
+	<drawable name="unselected">#ffffff</drawable>
+	<drawable name="printpage">#ff994e</drawable>
+</resources>

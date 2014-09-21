@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/numbk"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/tab_label"
+        android:background="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/numbk">
+    
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/user"
+      	android:text=""
+        android:ems="10"
+        android:inputType="textPassword" />
+    
+   <CheckBox
+        android:id="@+id/mibiledata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_marginTop="15dp"
+        android:textSize="13sp"
+        android:checked="false"
+        android:layout_below="@+id/password"
+        android:text="Use mobile data" />
+    
+     <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignRight="@+id/password"
+        android:layout_below="@+id/mibiledata"
+        android:text="Login" />
+
+     
+     <TextView
+         android:id="@+id/retstr"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:text="TextView" />
+     
+     <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="24dp"
+	    android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/retstr"
+        android:layout_marginBottom="30dp" />
+     
+     <TextView
+         android:id="@+id/error"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="20dp"
+         
+         android:text="TextView" />
+
+     
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
